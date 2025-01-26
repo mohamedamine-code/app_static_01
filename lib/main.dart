@@ -26,15 +26,15 @@ class test extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: (){},
-          icon:Icon(
+          onPressed: () {},
+          icon: Icon(
             Icons.face_5,
             size: 33,
-            ),
           ),
+        ),
         title: Text(
           "ISIMG",
           style: TextStyle(
@@ -46,235 +46,156 @@ class test extends StatelessWidget {
         elevation: 5.5,
         centerTitle: true,
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.list_outlined,size: 33,color: Colors.black)),
-          IconButton(onPressed: (){}, icon: Icon(Icons.search,size: 33,color: Colors.black,)),
+          IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.list_outlined, size: 33, color: Colors.black)),
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.search,
+                size: 33,
+                color: Colors.black,
+              )),
         ],
       ),
       backgroundColor: const Color.fromARGB(255, 1, 72, 4),
-      body:SingleChildScrollView(
+      body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
-        child: 
-      
-      
-        Column(
-        children: [
-          Container(
-            child: Text(
-              "Welcome ! 😉",
-              style: TextStyle(
-                fontSize: 37,
-                fontWeight: FontWeight.w500,
+        child: Column(
+          children: [
+            Container(
+              child: Text(
+                "Welcome ! 😉",
+                style: TextStyle(
+                  fontSize: 37,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(40),
+              alignment: Alignment.center,
+              height: 300,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(135, 184, 183, 183),
+                borderRadius: BorderRadius.circular(10),
               ),
             ),
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.all(40),
-            alignment: Alignment.center,
-            height: 300,
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(135, 184, 183, 183),
-              borderRadius: BorderRadius.circular(10),
+            Row(
+              children: [
+                Container(
+                  child: Text(
+                    "Product 6 ",
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      letterSpacing: 2,
+                      fontWeight: FontWeight.w200,
+                    ),
+                  ),
+                  margin: EdgeInsets.all(10),
+                  padding: EdgeInsets.all(20),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(135, 184, 183, 183),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    print("yoo is clicked");
+                  },
+                  child: Text(
+                    "Valider",
+                    style: TextStyle(
+                      fontSize: 22,
+                      color: const Color.fromARGB(255, 23, 1, 1),
+                    ),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: WidgetStatePropertyAll(const Color.fromARGB(255, 93, 33, 243)),
+                    padding: WidgetStatePropertyAll(EdgeInsets.all(10)),
+                  ),
+                ),
+              ],
             ),
-          ),
-          SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child:
-          Row(
-            children: [
-              Container(
-                child: Text(
-                  "Product 1 ",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
+            Container(
+              child: Text(
+                " Mohmaed Amine 😎 !",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  letterSpacing: 2,
+                  fontWeight: FontWeight.w200,
                 ),
               ),
-
-
-              Container(
-                child: Text(
-                  "Product 2 ",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(20),
+              alignment: Alignment.center,
+              height: 300,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(135, 184, 183, 183),
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            Container(
+              child: Text(
+                " Mohmaed Amine 😎 !",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  letterSpacing: 2,
+                  fontWeight: FontWeight.w200,
                 ),
               ),
-
-              Container(
-                child: Text(
-                  "Product 3 ",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(20),
+              alignment: Alignment.center,
+              height: 300,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(135, 184, 183, 183),
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            Container(
+              child: Text(
+                " Mohmaed Amine 😎 !",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  letterSpacing: 2,
+                  fontWeight: FontWeight.w200,
                 ),
               ),
-              Container(
-                child: Text(
-                  "Product 4 ",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(20),
+              alignment: Alignment.center,
+              height: 300,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(135, 184, 183, 183),
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            Container(
+              child: Text(
+                " Mohmaed Amine 😎 !",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  letterSpacing: 2,
+                  fontWeight: FontWeight.w200,
                 ),
               ),
-
-              Container(
-                child: Text(
-                  "Product 5 ",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
-                ),
+              margin: EdgeInsets.all(10),
+              padding: EdgeInsets.all(20),
+              alignment: Alignment.center,
+              height: 300,
+              decoration: BoxDecoration(
+                color: Color.fromARGB(135, 184, 183, 183),
+                borderRadius: BorderRadius.circular(10),
               ),
-              Container(
-                child: Text(
-                  "Product 6 ",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ],
-          ),
-          ),
-
-          Container(
-            child:  Text(
-                  " Mohmaed Amine 😎 !",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                height: 300,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-
-              Container(
-            child:  Text(
-                  " Mohmaed Amine 😎 !",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                height: 300,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-            child:  Text(
-                  " Mohmaed Amine 😎 !",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                height: 300,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-            child:  Text(
-                  " Mohmaed Amine 😎 !",
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.white,
-                    letterSpacing: 2,
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
-                margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                height: 300,
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(135, 184, 183, 183),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-        ],
-      ),
+            ),
+          ],
+        ),
       ),
     );
   }
