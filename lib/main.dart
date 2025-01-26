@@ -26,224 +26,256 @@ class test extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: (){},
+          icon:Icon(
+            Icons.face_5,
+            size: 33,
+            ),
+          ),
         title: Text(
           "ISIMG",
           style: TextStyle(
-            fontSize: 28,
+            fontSize: 33,
             fontWeight: FontWeight.bold,
-            color: const Color.fromARGB(248, 15, 3, 3),
+            color: Color.fromARGB(255, 121, 49, 2),
           ),
         ),
-        centerTitle: true,
-        leading: IconButton(
-        onPressed:(){} ,
-        icon: Icon(Icons.face_5,size: 32,),
-        ),
-        actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.list),iconSize: 32,),
-          IconButton(onPressed: (){}, icon: Icon(Icons.search),iconSize: 32,),
-        ],
         elevation: 5.5,
+        centerTitle: true,
+        actions: [
+          IconButton(onPressed: (){}, icon: Icon(Icons.list_outlined,size: 33,color: Colors.black)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.search,size: 33,color: Colors.black,)),
+        ],
       ),
-      backgroundColor: Color.fromARGB(228, 11, 56, 33),
-      body: SingleChildScrollView(
-
-    child:Column(
-          children: [
+      backgroundColor: const Color.fromARGB(255, 1, 72, 4),
+      body:SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: 
+      
+      
+        Column(
+        children: [
           Container(
             child: Text(
-              "Yoo Is Me !",
+              "Welcome ! 😉",
               style: TextStyle(
-                fontSize: 33,
-                color: Colors.white,
+                fontSize: 37,
+                fontWeight: FontWeight.w500,
               ),
             ),
-            padding: EdgeInsets.all(60),
             margin: EdgeInsets.all(10),
-            width: 820,
+            padding: EdgeInsets.all(40),
             alignment: Alignment.center,
+            height: 300,
             decoration: BoxDecoration(
+              color: const Color.fromARGB(135, 184, 183, 183),
               borderRadius: BorderRadius.circular(10),
-              color: Color.fromARGB(111, 208, 199, 199),
             ),
           ),
-          
           SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          child : Row(
+          child:
+          Row(
             children: [
               Container(
                 child: Text(
-                  "hi !",
+                  "Product 1 ",
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 20,
                     color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
                   ),
                 ),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.all(20),
                 alignment: Alignment.center,
-                margin: EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(111, 208, 199, 199),
+                  color: Color.fromARGB(135, 184, 183, 183),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+
+
+              Container(
+                child: Text(
+                  "Product 2 ",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(135, 184, 183, 183),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+
+              Container(
+                child: Text(
+                  "Product 3 ",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(135, 184, 183, 183),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
               Container(
                 child: Text(
-                  "hi !",
+                  "Product 4 ",
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 20,
                     color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
                   ),
                 ),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.all(20),
                 alignment: Alignment.center,
-                margin: EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(111, 208, 199, 199),
+                  color: Color.fromARGB(135, 184, 183, 183),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+
+              Container(
+                child: Text(
+                  "Product 5 ",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(135, 184, 183, 183),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
               Container(
                 child: Text(
-                  "hi !",
+                  "Product 6 ",
                   style: TextStyle(
-                    fontSize: 25,
+                    fontSize: 20,
                     color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
                   ),
                 ),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.all(20),
                 alignment: Alignment.center,
-                margin: EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(111, 208, 199, 199),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-                child: Text(
-                  "hi !",
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.white,
-                  ),
-                ),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(111, 208, 199, 199),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-                child: Text(
-                  "hi !",
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.white,
-                  ),
-                ),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(111, 208, 199, 199),
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              Container(
-                child: Text(
-                  "hi !",
-                  style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.white,
-                  ),
-                ),
-                padding: EdgeInsets.all(20),
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Color.fromARGB(111, 208, 199, 199),
+                  color: Color.fromARGB(135, 184, 183, 183),
                   borderRadius: BorderRadius.circular(10),
                 ),
               ),
             ],
           ),
           ),
+
           Container(
-            child: Text(
-              "Yeah this is Me !",
-              style: TextStyle(
-                fontSize: 33,
-                color: Colors.white,
-              ),
-            ),
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.all(60),
-            width: 820,
-            decoration: BoxDecoration(
-              color: Color.fromARGB(111, 208, 199, 199),
-              borderRadius: BorderRadius.circular(10)
-            ),
-          ),
-          Column(
-            children: [
-              Container(
-                child: Text(
-                  "Yeah this is Me !",
+            child:  Text(
+                  " Mohmaed Amine 😎 !",
                   style: TextStyle(
-                    fontSize: 33,
+                    fontSize: 20,
                     color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
                   ),
                 ),
                 margin: EdgeInsets.all(10),
-                padding: EdgeInsets.all(60),
-                width: 820,
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.center,
+                height: 300,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(111, 208, 199, 199),
-                  borderRadius: BorderRadius.circular(10)
+                  color: Color.fromARGB(135, 184, 183, 183),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+
+              Container(
+            child:  Text(
+                  " Mohmaed Amine 😎 !",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.center,
+                height: 300,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(135, 184, 183, 183),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
               Container(
-            child: Text(
-              "Yeah this is Me !",
-              style: TextStyle(
-                fontSize: 33,
-                color: Colors.white,
+            child:  Text(
+                  " Mohmaed Amine 😎 !",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.center,
+                height: 300,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(135, 184, 183, 183),
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
-            ),
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.all(60),
-            width: 820,
-            decoration: BoxDecoration(
-              color: Color.fromARGB(111, 208, 199, 199),
-              borderRadius: BorderRadius.circular(10)
-            ),
-          ),
               Container(
-            child: Text(
-              "Yeah this is Me !",
-              style: TextStyle(
-                fontSize: 33,
-                color: Colors.white,
+            child:  Text(
+                  " Mohmaed Amine 😎 !",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    letterSpacing: 2,
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(20),
+                alignment: Alignment.center,
+                height: 300,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(135, 184, 183, 183),
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
-            ),
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.all(60),
-            width: 820,
-            decoration: BoxDecoration(
-              color: Color.fromARGB(111, 208, 199, 199),
-              borderRadius: BorderRadius.circular(10)
-            ),
-          ),
-            ],
-          ),
-      ],
-    ),
+        ],
       ),
-  );
+      ),
+    );
   }
 }
